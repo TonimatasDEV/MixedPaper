@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "mixedpaper",
+  "version": "${modVersion}",
+  "name": "MixedPaper",
+  "accessWidener": "mixedpaper.accesswidener",
+  "description": "Load Paper plugins in Fabric.",
+  "authors": [
+    "TonimatasDEV"
+  ],
+  "contact": {
+    "repo": "https://github.com/TonimatasDEV/PacketFixer"
+  },
+  "license": "MIT",
+  "icon": "assets/mixedpaper/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.tonimatas.mixedpaper.MixedPaper"
+    ]
+  },
+  "mixins": [
+    "mixedpaper.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "${minecraftVersion}"
+  },
+  "custom": {
+    "loom:injected_interfaces": {
+    }
+  }
+}

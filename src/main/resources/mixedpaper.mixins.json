@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.tonimatas.mixedpaper.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "dev.tonimatas.mixedpaper.mixins.MixedMixinConfig",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+  ]
+}
