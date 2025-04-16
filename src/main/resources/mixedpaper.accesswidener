@@ -38,61 +38,61 @@ accessible field net/minecraft/network/protocol/game/ServerboundMovePlayerPacket
 accessible field net/minecraft/network/protocol/game/ServerboundMovePlayerPacket yRot F
 accessible field net/minecraft/network/protocol/game/ServerboundMovePlayerPacket z D
 accessible method net/minecraft/network/syncher/SynchedEntityData getItem (Lnet/minecraft/network/syncher/EntityDataAccessor;)Lnet/minecraft/network/syncher/SynchedEntityData$DataItem;
-#public net.minecraft.resources.RegistryOps lookupProvider
-#public net.minecraft.resources.RegistryOps$HolderLookupAdapter
-#public net.minecraft.server.Main forceUpgrade(Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/world/level/storage/WorldData;Lcom/mojang/datafixers/DataFixer;ZLjava/util/function/BooleanSupplier;Lnet/minecraft/core/RegistryAccess;Z)V
-#public net.minecraft.server.MinecraftServer LOGGER
-#public net.minecraft.server.MinecraftServer doRunTask(Lnet/minecraft/server/TickTask;)V
-#public net.minecraft.server.MinecraftServer executor
-#public net.minecraft.server.MinecraftServer fixerUpper
-#public net.minecraft.server.MinecraftServer playerDataStorage
-#public net.minecraft.server.MinecraftServer prepareLevels(Lnet/minecraft/server/level/progress/ChunkProgressListener;)V
-#public net.minecraft.server.MinecraftServer progressListenerFactory
-#public net.minecraft.server.MinecraftServer resources
-#public net.minecraft.server.MinecraftServer serverThread
-#public net.minecraft.server.MinecraftServer$ReloadableResources
-#public net.minecraft.server.RegistryLayer STATIC_ACCESS
-#public net.minecraft.server.ReloadableServerResources
-#public net.minecraft.server.ServerAdvancementManager advancements
-#public net.minecraft.server.Services USERID_CACHE_FILE
-#public net.minecraft.server.dedicated.DedicatedServerProperties$WorldDimensionData
-#public net.minecraft.server.dedicated.Settings getStringRaw(Ljava/lang/String;)Ljava/lang/String;
-#public net.minecraft.server.dedicated.Settings properties
-#public net.minecraft.server.level.ChunkHolder oldTicketLevel
-#public net.minecraft.server.level.ChunkHolder playerProvider
-#public net.minecraft.server.level.ChunkLevel ENTITY_TICKING_LEVEL
-#public net.minecraft.server.level.ChunkMap addEntity(Lnet/minecraft/world/entity/Entity;)V
-#public net.minecraft.server.level.ChunkMap anyPlayerCloseEnoughForSpawning(Lnet/minecraft/world/level/ChunkPos;)Z
-#public net.minecraft.server.level.ChunkMap distanceManager
-#public net.minecraft.server.level.ChunkMap entityMap
-#public net.minecraft.server.level.ChunkMap getVisibleChunkIfPresent(J)Lnet/minecraft/server/level/ChunkHolder;
-#public net.minecraft.server.level.ChunkMap level
-#public net.minecraft.server.level.ChunkMap progressListener
-#public net.minecraft.server.level.ChunkMap save(Lnet/minecraft/world/level/chunk/ChunkAccess;)Z
-#public net.minecraft.server.level.ChunkMap serverViewDistance
-#public net.minecraft.server.level.ChunkMap setServerViewDistance(I)V
-#public net.minecraft.server.level.ChunkMap toDrop
-#public net.minecraft.server.level.ChunkMap updatingChunkMap
-#public net.minecraft.server.level.ChunkMap visibleChunkMap
-#public net.minecraft.server.level.ChunkMap$DistanceManager
-#public net.minecraft.server.level.ChunkMap$TrackedEntity
-#public net.minecraft.server.level.ChunkMap$TrackedEntity seenBy
-#public net.minecraft.server.level.ChunkMap$TrackedEntity serverEntity
-#public net.minecraft.server.level.DistanceManager simulationDistance
-#public net.minecraft.server.level.DistanceManager ticketStorage
-#public net.minecraft.server.level.ServerBossEvent broadcast(Ljava/util/function/Function;)V
-#public net.minecraft.server.level.ServerBossEvent visible
-#public net.minecraft.server.level.ServerChunkCache mainThread
-#public net.minecraft.server.level.ServerChunkCache mainThreadProcessor
-#public net.minecraft.server.level.ServerChunkCache runDistanceManagerUpdates()Z
-#public net.minecraft.server.level.ServerChunkCache spawnEnemies
-#public net.minecraft.server.level.ServerChunkCache spawnFriendlies
-#public net.minecraft.server.level.ServerChunkCache$MainThreadExecutor
-#public net.minecraft.server.level.ServerLevel chunkSource
-#public net.minecraft.server.level.ServerLevel entityManager
-#public net.minecraft.server.level.ServerLevel findLightningRod(Lnet/minecraft/core/BlockPos;)Ljava/util/Optional;
-#public net.minecraft.server.level.ServerLevel getEntities()Lnet/minecraft/world/level/entity/LevelEntityGetter;
-#public net.minecraft.server.level.ServerLevel serverLevelData
+accessible field net/minecraft/resources/RegistryOps lookupProvider Lnet/minecraft/resources/RegistryOps$RegistryInfoLookup;
+accessible class net/minecraft/resources/RegistryOps$HolderLookupAdapter
+accessible method net/minecraft/server/Main forceUpgrade (Lnet/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess;Lnet/minecraft/world/level/storage/WorldData;Lcom/mojang/datafixers/DataFixer;ZLjava/util/function/BooleanSupplier;Lnet/minecraft/core/RegistryAccess;Z)V
+accessible field net/minecraft/server/MinecraftServer LOGGER Lorg/slf4j/Logger;
+accessible method net/minecraft/server/MinecraftServer doRunTask (Lnet/minecraft/server/TickTask;)V
+accessible field net/minecraft/server/MinecraftServer executor Ljava/util/concurrent/Executor;
+accessible field net/minecraft/server/MinecraftServer fixerUpper Lcom/mojang/datafixers/DataFixer;
+accessible field net/minecraft/server/MinecraftServer playerDataStorage Lnet/minecraft/world/level/storage/PlayerDataStorage;
+accessible method net/minecraft/server/MinecraftServer prepareLevels (Lnet/minecraft/server/level/progress/ChunkProgressListener;)V
+accessible field net/minecraft/server/MinecraftServer progressListenerFactory Lnet/minecraft/server/level/progress/ChunkProgressListenerFactory;
+accessible field net/minecraft/server/MinecraftServer resources Lnet/minecraft/server/MinecraftServer$ReloadableResources;
+accessible field net/minecraft/server/MinecraftServer serverThread Ljava/lang/Thread;
+accessible class net/minecraft/server/MinecraftServer$ReloadableResources
+accessible field net/minecraft/server/RegistryLayer STATIC_ACCESS Lnet/minecraft/core/RegistryAccess$Frozen;
+accessible class net/minecraft/server/ReloadableServerResources
+accessible field net/minecraft/server/ServerAdvancementManager advancements Ljava/util/Map;
+accessible field net/minecraft/server/Services USERID_CACHE_FILE Ljava/lang/String;
+accessible class net/minecraft/server/dedicated/DedicatedServerProperties$WorldDimensionData
+accessible method net/minecraft/server/dedicated/Settings getStringRaw (Ljava/lang/String;)Ljava/lang/String;
+accessible field net/minecraft/server/dedicated/Settings properties Ljava/util/Properties;
+accessible field net/minecraft/server/level/ChunkHolder oldTicketLevel I
+accessible field net/minecraft/server/level/ChunkHolder playerProvider Lnet/minecraft/server/level/ChunkHolder$PlayerProvider;
+accessible field net/minecraft/server/level/ChunkLevel ENTITY_TICKING_LEVEL I
+accessible method net/minecraft/server/level/ChunkMap addEntity (Lnet/minecraft/world/entity/Entity;)V
+accessible method net/minecraft/server/level/ChunkMap anyPlayerCloseEnoughForSpawning (Lnet/minecraft/world/level/ChunkPos;)Z
+accessible field net/minecraft/server/level/ChunkMap distanceManager Lnet/minecraft/server/level/ChunkMap$DistanceManager;
+accessible field net/minecraft/server/level/ChunkMap entityMap Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+accessible method net/minecraft/server/level/ChunkMap getVisibleChunkIfPresent (J)Lnet/minecraft/server/level/ChunkHolder;
+accessible field net/minecraft/server/level/ChunkMap level Lnet/minecraft/server/level/ServerLevel;
+accessible field net/minecraft/server/level/ChunkMap progressListener Lnet/minecraft/server/level/progress/ChunkProgressListener;
+accessible method net/minecraft/server/level/ChunkMap save (Lnet/minecraft/world/level/chunk/ChunkAccess;)Z
+accessible field net/minecraft/server/level/ChunkMap serverViewDistance I
+accessible method net/minecraft/server/level/ChunkMap setServerViewDistance (I)V
+accessible field net/minecraft/server/level/ChunkMap toDrop Lit/unimi/dsi/fastutil/longs/LongSet;
+accessible field net/minecraft/server/level/ChunkMap updatingChunkMap Lit/unimi/dsi/fastutil/longs/Long2ObjectLinkedOpenHashMap;
+accessible field net/minecraft/server/level/ChunkMap visibleChunkMap Lit/unimi/dsi/fastutil/longs/Long2ObjectLinkedOpenHashMap;
+accessible class net/minecraft/server/level/ChunkMap$DistanceManager
+accessible class net/minecraft/server/level/ChunkMap$TrackedEntity
+accessible field net/minecraft/server/level/ChunkMap$TrackedEntity seenBy Ljava/util/Set;
+accessible field net/minecraft/server/level/ChunkMap$TrackedEntity serverEntity Lnet/minecraft/server/level/ServerEntity;
+accessible field net/minecraft/server/level/DistanceManager simulationDistance I
+accessible field net/minecraft/server/level/DistanceManager ticketStorage Lnet/minecraft/world/level/TicketStorage;
+accessible method net/minecraft/server/level/ServerBossEvent broadcast (Ljava/util/function/Function;)V
+accessible field net/minecraft/server/level/ServerBossEvent visible Z
+accessible field net/minecraft/server/level/ServerChunkCache mainThread Ljava/lang/Thread;
+accessible field net/minecraft/server/level/ServerChunkCache mainThreadProcessor Lnet/minecraft/server/level/ServerChunkCache$MainThreadExecutor;
+accessible method net/minecraft/server/level/ServerChunkCache runDistanceManagerUpdates ()Z
+accessible field net/minecraft/server/level/ServerChunkCache spawnEnemies Z
+accessible field net/minecraft/server/level/ServerChunkCache spawnFriendlies Z
+accessible class net/minecraft/server/level/ServerChunkCache$MainThreadExecutor
+accessible field net/minecraft/server/level/ServerLevel chunkSource Lnet/minecraft/server/level/ServerChunkCache;
+accessible field net/minecraft/server/level/ServerLevel entityManager Lnet/minecraft/world/level/entity/PersistentEntitySectionManager;
+accessible method net/minecraft/server/level/ServerLevel findLightningRod (Lnet/minecraft/core/BlockPos;)Ljava/util/Optional;
+accessible method net/minecraft/server/level/ServerLevel getEntities ()Lnet/minecraft/world/level/entity/LevelEntityGetter;
+accessible field net/minecraft/server/level/ServerLevel serverLevelData Lnet/minecraft/world/level/storage/ServerLevelData;
 #public net.minecraft.server.level.ServerPlayer completeUsingItem()V
 #public net.minecraft.server.level.ServerPlayer containerSynchronizer
 #public net.minecraft.server.level.ServerPlayer findRespawnAndUseSpawnBlock(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer$RespawnConfig;Z)Ljava/util/Optional;
